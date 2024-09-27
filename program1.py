@@ -13,7 +13,7 @@ class Solution(object):
             
     return not stack  # If the stack is empty, all brackets are matched
 
-# Get user input
+
 user_input = input("Enter a string of parentheses: ")
 if is_valid_parentheses(user_input):
     print("The string is valid.")
