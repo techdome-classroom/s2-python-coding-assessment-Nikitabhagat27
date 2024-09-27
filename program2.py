@@ -1,6 +1,6 @@
 class Solution(object):
    def roman_to_int(s: str) -> int:
-    # Mapping of Roman numerals to their integer values
+  
     roman_values = {
         'I': 1,
         'V': 5,
@@ -18,7 +18,7 @@ class Solution(object):
     for char in reversed(s):
         current_value = roman_values[char]
         
-        # If the current value is less than the previous value, subtract it
+ 
         if current_value < prev_value:
             total -= current_value
         else:
@@ -28,7 +28,7 @@ class Solution(object):
     
     return total
 
-# Get user input
+
 user_input = input("Enter a Roman numeral: ")
 result = roman_to_int(user_input)
 print(f"The integer value of the Roman numeral {user_input} is {result}.")
